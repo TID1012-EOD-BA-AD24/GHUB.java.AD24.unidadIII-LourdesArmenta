@@ -1,2 +1,4 @@
+./pared/Pared.java
+./sumaDigitos/SumaDigitos.java
 ./miPrincipal/Principal.java
 ./miTest/AppTest.java
