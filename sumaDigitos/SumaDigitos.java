@@ -23,10 +23,13 @@ public class SumaDigitos {
 
     }
     public static long sumaDigitos_recursiva(int n){
-        long suma = 0;
-        if (n>0)
-            suma = suma +sumaDigitos_recursiva(n-1);
-        return suma;
+        //long suma = 0;
+        if (n==1)
+           return 1;
+        else
+            //suma = n+sumaDigitos_recursiva(n-1);
+            return n+sumaDigitos_recursiva(n-1);
+        //return suma;
     }
     
 }
