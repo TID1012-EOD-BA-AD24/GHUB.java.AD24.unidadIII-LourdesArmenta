@@ -9,6 +9,9 @@ public class SumaDigitos {
         int num=entrada.nextInt();
         System.out.println("Suma de los primeros "+num+" numeros naturales = "+
             sumaDigitos_iterariva(num));
+
+            System.out.println("Suma de los primeros "+num+" numeros naturales = "+
+            sumaDigitos_recursiva(num));
     }
     public static long sumaDigitos_iterariva(int n){
         long suma = 0;
@@ -18,6 +21,12 @@ public class SumaDigitos {
         }
         return suma;
 
+    }
+    public static long sumaDigitos_recursiva(int n){
+        long suma = 0;
+        if (n>0)
+            suma = suma +sumaDigitos_recursiva(n-1);
+        return suma;
     }
     
 }
