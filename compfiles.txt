@@ -1,3 +1,4 @@
+./factorial/Factorial.java
 ./pared/Pared.java
 ./sumaDigitos/SumaDigitos.java
 ./miPrincipal/Principal.java
