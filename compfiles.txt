@@ -1,5 +1,12 @@
 ./factorial/Factorial.java
+./alfabeto/Alfabeto.java
+./fibonacci/Fibonacci.java
+./fibonacci/FibRecursivoDe40a50.java
 ./pared/Pared.java
+./performance/Performance.java
 ./sumaDigitos/SumaDigitos.java
+./descomponerDigitos/DescomponerDigitos.java
 ./miPrincipal/Principal.java
+./mcd/Mcd.java
+./muestraNaturales/muestraNaturales.java
 ./miTest/AppTest.java
