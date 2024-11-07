@@ -1,6 +1,7 @@
 ./factorial/Factorial.java
 ./alfabeto/Alfabeto.java
 ./fibonacci/Fibonacci.java
+./fibonacci/FibRecursivoOptimizado.java
 ./fibonacci/FibRecursivoDe40a50.java
 ./pared/Pared.java
 ./performance/Performance.java
