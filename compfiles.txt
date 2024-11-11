@@ -6,6 +6,9 @@
 ./pared/Pared.java
 ./performance/Performance.java
 ./sumaDigitos/SumaDigitos.java
+./arboles/ArbolBinario.java
+./arboles/Nodo.java
+./arboles/ClienteMain.java
 ./descomponerDigitos/DescomponerDigitos.java
 ./miPrincipal/Principal.java
 ./mcd/Mcd.java
