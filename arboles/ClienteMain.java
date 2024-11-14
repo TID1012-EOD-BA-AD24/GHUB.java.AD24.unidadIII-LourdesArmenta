@@ -25,6 +25,17 @@ public class ClienteMain {
         System.out.println("\n Postorden Recursivo");
         ab.postorden();
         System.out.println();
+        System.out.println("Recorrido por Niveles");
+        ab.recorridoPorNiveles();
+        System.out.println();
+        System.out.println("Preorden Iterativo");
+        ab.preordenIterativo();
+        System.out.println();
+        System.out.println("Inorden Iterativo");
+        ab.inordenIterativo();
+        System.out.println();
+
+
 
 
             

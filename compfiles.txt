@@ -3,8 +3,12 @@
 ./fibonacci/Fibonacci.java
 ./fibonacci/FibRecursivoOptimizado.java
 ./fibonacci/FibRecursivoDe40a50.java
+./cola/Nodo.java
+./cola/Cola.java
 ./pared/Pared.java
 ./performance/Performance.java
+./pila/Nodo.java
+./pila/Pila.java
 ./sumaDigitos/SumaDigitos.java
 ./arboles/ArbolBinario.java
 ./arboles/Nodo.java
