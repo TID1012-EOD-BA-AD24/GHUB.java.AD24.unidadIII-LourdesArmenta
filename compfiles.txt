@@ -12,6 +12,8 @@
 ./sumaDigitos/SumaDigitos.java
 ./arboles/ArbolBinario.java
 ./arboles/Nodo.java
+./arboles/Comparable.java
+./arboles/ArbolBinarioBusqueda.java
 ./arboles/ClienteMain.java
 ./descomponerDigitos/DescomponerDigitos.java
 ./miPrincipal/Principal.java
