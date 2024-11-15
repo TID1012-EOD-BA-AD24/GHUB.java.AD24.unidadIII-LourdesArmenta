@@ -34,6 +34,9 @@ public class ClienteMain {
         System.out.println("Inorden Iterativo");
         ab.inordenIterativo();
         System.out.println();
+        System.out.println("postorde Iterativo");
+        ab.postordenIterativo();
+        System.out.println();
 
 
 
