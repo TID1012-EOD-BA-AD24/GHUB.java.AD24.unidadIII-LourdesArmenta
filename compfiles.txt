@@ -17,6 +17,7 @@
 ./arboles/Comparable.java
 ./arboles/Entero.java
 ./arboles/Estudiante.java
+./arboles/ArbolBinarioBusqueda.java
 ./arboles/ClienteMain.java
 ./descomponerDigitos/DescomponerDigitos.java
 ./miPrincipal/Principal.java
