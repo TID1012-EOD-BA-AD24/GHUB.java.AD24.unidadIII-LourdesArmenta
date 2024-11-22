@@ -1,6 +1,5 @@
 package arboles;
 
-import java.util.concurrent.ExecutionException;
 
 public class ArbolBinarioBusqueda extends ArbolBinario {
     public ArbolBinarioBusqueda(){
@@ -113,6 +112,71 @@ public class ArbolBinarioBusqueda extends ArbolBinario {
            return localizar(raizSub.getIzquierdo(), buscado);
         else
         return localizar(raizSub.getDerecho(), buscado);
+
+    }
+
+    public boolean eliminar(Object valor){
+        Comparable dato = (Comparable) valor;
+        //Buscar el nodo a eliminar y su antecesor
+        Nodo antecesor = null; //antecesro del nodo a eliminar
+        //aux: auxiliar que va recorriendo los nodos, desde la raiz
+        Nodo aux = raiz;
+        while (aux != null){
+           if (dato.esIgual(aux.getValor())){
+              break;
+           }
+           antecesor = aux;
+           if(dato.esMenor(aux.getValor()))
+              aux = aux.getIzquierdo();
+           else
+              aux= aux.getDerecho();
+        }
+        if (aux ==null)
+           return false; //dato no se encontro;
+        //si llega a este punto, quiere decir que el nodo existe
+        //y es aux y su antecesor es antecesor
+        //Examinar cada caso
+        //1. Si tiene menos de dos hijos, incluso una hoja, 
+        //   reajustar los enlaces de su antecesor
+       if(aux.getIzquierdo() ==null){
+           
+          if(((Comparable) aux.getValor()).esMenor(antecesor.getValor()))
+             antecesor.setIzquierdo(aux.getDerecho());
+          else
+             antecesor.setDerecho(aux.getDerecho());
+        }
+        else if(aux.getDerecho()==null){
+                if(((Comparable)aux.getValor()).esMenor(antecesor.getValor()))
+                   antecesor.setIzquierdo(aux.getIzquierdo());
+                else
+                   antecesor.setDerecho(aux.getIzquierdo());
+        }
+        else  
+           //El nodo a eliminar tiene rama izquierda y rama derecha
+           reemplazarPorMayorIzquierdo(aux);
+        aux = null;
+        return true;
+
+    }
+
+    private void reemplazarPorMayorIzquierdo(Nodo act){
+       Nodo mayor = act;
+       Nodo ant = act;
+       mayor = act.getIzquierdo();
+       //Buscar el mayor de la rama izquierda
+       //ant el antecesor de mayor
+       while(mayor.getDerecho()!=null)
+       {
+          ant=mayor;
+          mayor = mayor.getDerecho();
+
+       }
+       act.setValor(mayor.getValor()); //reemplazo
+       if (ant == act)
+          ant.setIzquierdo(mayor.getIzquierdo());
+       else
+          ant.setDerecho(mayor.getIzquierdo());
+
 
     }
 

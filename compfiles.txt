@@ -19,6 +19,7 @@
 ./arboles/Estudiante.java
 ./arboles/ArbolBinarioBusqueda.java
 ./arboles/ClienteMain.java
+./arboles/BTreePrinter.java
 ./descomponerDigitos/DescomponerDigitos.java
 ./miPrincipal/Principal.java
 ./mcd/Mcd.java
