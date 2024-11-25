@@ -11,7 +11,7 @@
 ./pila/Pila.java
 ./sumaDigitos/SumaDigitos.java
 ./arboles/ArbolBinarioOrdenado.java
-./arboles/ClienteMainArbolOrd.java
+./arboles/ClienteMainArbBinOrd.java
 ./arboles/ArbolBinario.java
 ./arboles/Nodo.java
 ./arboles/Comparable.java
