@@ -31,9 +31,10 @@ public class ClienteMainClaseTree {
 
         TreeSet<Persona> t1 = new TreeSet<>();
 
-        t1.add(new Persona(5,"Lourdes"));
-        t1.add(new Persona(2,"Juan"));
-        t1.add(new Persona(4,"Laura"));
+        t1.add(new Persona(5,"Ana"));
+        t1.add(new Persona(2,"Zulema"));
+        t1.add(new Persona(4,"Daniel"));
+        t1.add(new Persona(3, "Carmen"));
 
         for(Iterator<Persona> it = t1.iterator(); it.hasNext(); ){
             System.out.println(it.next());

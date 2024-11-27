@@ -35,12 +35,20 @@ public class Persona implements Comparable<Persona>{
 
     @Override
     public int compareTo(Persona o) {
+        /* 
         if (this.codigo == o.getCodigo())
             return 0;
         else if (this.codigo>o.getCodigo())
             return 1;
         else 
             return -1;
+        */
+        if (this.nombre.equals(o.getNombre()))
+           return 0;
+        else if (this.nombre.compareTo(o.getNombre()) > 0 )
+           return 1;
+        else    
+           return -1;
     }
     
     
